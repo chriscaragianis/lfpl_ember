@@ -1,0 +1,18 @@
+<div class="borrowing jumbotron">
+  <h1>Borrowing materials</h1>
+</div>
+<div class="row">
+  <ul class="col-md-4 nav nav-pills nav-stacked">
+    <li>{{#link-to "circ"}}Circulation Policies{{/link-to}}</li>
+    <li><a href="get-card.htm">Get a Card</a></li>
+    <li>{{#link-to "check"}}Check Your Library Account or Renew Items{{/link-to}}</li>
+    <li><a href="ill.htm">Interlibrary Loan</a></li>
+    <li><a href="#placing">Placing a Request</a></li>
+    <li><a href="#pw">What is My Password?</a></li>
+    <li><a href="#return">Return Policy</a></li>
+    <li><a href="#lost">Lost Item Policy</a></li>
+  </ul>
+  <div class="col-md-8 info-display">
+    {{outlet}}
+  </div>
+</div>

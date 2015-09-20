@@ -1,3 +1,73 @@
-<h2 id="title">Welcome to Ember.js</h2>
-
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+     <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">LFPL</a>
+    </div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            Learn
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Research Tools</a></li>
+            <li><a href="#">Learn Online</a></li>
+            <li><a href="#">Students</a></li>
+            <li><a href="#">Parents</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visit<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Locations and Hours</a></li>
+            <li><a href="#">Events and Exhibits</a></li>
+            <li><a href="#">Facilities</a></li>
+            <li><a href="#">Services</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Get a library card</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            Explore
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Library Catalog</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Teens</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Internet at the Library</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">English</a></li>
+            <li><a href="#">French</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><input type="text" class="form-control" placeholder="Card Number"></li>
+            <li><input type="password" class="form-control" placeholder="Password"></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
 {{outlet}}
+</div>
