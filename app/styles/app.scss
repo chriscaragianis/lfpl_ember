@@ -1,0 +1,44 @@
+* {
+  border-radius: 0 ! important;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar .container-fluid {
+  border-color: black;
+  border-style: solid ! important;
+  border: 2px;
+}
+
+.nav-stacked {
+  border-color: black;
+  border: 0;
+  border-right: 3px;
+  border-style: solid ! important;
+  margin-right: 10px;
+}
+
+.jumbotron h1 {
+  background-color: rgba(255,255,255,0.5);
+  padding: 10px;
+  float: left;
+}
+
+.borrowing {
+  background-image: url("/assets/img/borrowing.jpg");
+  background-size: cover;
+}
+
+.research {
+  background-image: url("/assets/img/research.jpg");
+  background-size: cover;
+}
+
+.events {
+  background-image: url("/assets/img/events.jpg");
+  background-size: cover;
+}
+
+.learn-online {
+  background-image: url("/assets/img/learn-online.jpg");
+  background-size: cover;
+}

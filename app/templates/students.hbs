@@ -1,2 +1,20 @@
-sdf
+<div class="students jumbotron">
+  <h1>Students</h1>
+  <br style="clear: left"/>
+</div>
+<div class="row">
+  <ul class="col-md-3 nav nav-pills nav-stacked">
+    <li>{{#link-to "circ"}}Circulation Policies{{/link-to}}</li>
+    <li>{{#link-to "card"}}Get a Card{{/link-to}}</li>
+    <li>{{#link-to "check"}}Check Your Library Account or Renew Items{{/link-to}}</li>
+    <li>{{#link-to "ill"}}Interlibrary Loan{{/link-to}}</li>
+    <li>{{#link-to "placing"}}Placing a Request{{/link-to}}</li>
+    <li><a href="#pw">What is My Password?</a></li>
+    <li><a href="#return">Return Policy</a></li>
+    <li><a href="#lost">Lost Item Policy</a></li>
+  </ul>
+  <div class="col-md-8 info-display">
+    {{outlet}}
+  </div>
+</div>
 

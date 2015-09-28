@@ -24,12 +24,13 @@ Router.map(function() {
     this.resource('ccconnection');
     this.resource('college');
   });
+  this.resource('parents');
   this.resource('locations');
   this.resource('events');
   this.resource('facilities');
   this.resource('services');
   this.resource('borrowing', function() {
-    this.resource('ill', {path : "/borrowing/ill"});
+    this.resource('ill_b', {path : 'ill'});
     this.resource('circ');
     this.resource('check');
     this.resource('placing');

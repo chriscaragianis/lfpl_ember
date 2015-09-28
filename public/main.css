@@ -1,5 +1,11 @@
+.jumbotron {
+  border-radius: 0;
+} 
+
+
 .borrowing {
   background-image: url("assets/borrowing.jpg");
   background-size: cover;
 }
+
 
