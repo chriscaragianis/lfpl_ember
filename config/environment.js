@@ -2,6 +2,15 @@
 
 module.exports = function(environment) {
   var ENV = {
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self' 'unsafe-inline' *",
+      'font-src': "'self' *",
+      'connect-src': "'self' *",
+      'img-src': "'self' *",
+      'style-src': "'self' *",
+      'media-src': "'self' *"
+    },
     modulePrefix: 'lfpl-ember',
     environment: environment,
     baseURL: '/',
