@@ -12,6 +12,24 @@
   margin-bottom: 10px;
 }
 
+.grid-item :hover {
+  box-shadow: 5px 5px 3px #888;
+}
+
+.slide {
+  width: 300px;
+}
+
+.slide img {
+  width: 300px;
+}
+
+.text-slide {
+  width: 150px;
+  height: 200px;
+}
+
+
 .navbar .container-fluid {
   border-color: black;
   border-style: solid ! important;
