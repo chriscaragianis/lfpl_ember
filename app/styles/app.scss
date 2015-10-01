@@ -3,41 +3,60 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.galleria { 
-}
-
 .grid-item {
   float: left;
   background-color: grey;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  border: 1px;
+  border-color: silver;
+  border-style: solid;
+  box-shadow: 2px 2px 2px #bbb;
 }
 
-.grid-item :hover {
-  box-shadow: 5px 5px 3px #888;
+.grid-sizer {
+  width: 33%;
+}
+.gutter-sizer {
+  width: 1%;
 }
 
 .slide {
-  width: 300px;
+  width: 30%;
 }
 
 .slide img {
-  width: 300px;
+  width: 100%;
 }
 
 .text-slide {
-  width: 150px;
-  height: 200px;
+  width: 22%;
+  color: white;
+  font-size: 3rem;
+  padding: 1.5%;
 }
 
+.text-slide img {
+  width: 80%;
+  margin-left: 10%;
+}
 
+.search-slide {
+  width: 200px;
+  height: 50px;
+}
+
+.grid-item:hover {
+  box-shadow: 5px 5px 3px #888;
+  color: orange;
+}
 .navbar .container-fluid {
-  border-color: black;
+  border-color: silver;
   border-style: solid ! important;
   border: 2px;
 }
 
 .nav-stacked {
-  border-color: black;
+  border-color: silver;
   border: 0;
   border-right: 3px;
   border-style: solid ! important;

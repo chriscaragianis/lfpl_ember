@@ -1,26 +1,33 @@
 <div class="row">
   <div class="grid col-md-12">
+    <div class="grid-sizer"></div>
+    <div class="gutter-sizer"></div>
     <div class="grid-item slide">
       <img src="assets/img/slides/1kbb4k-slide2.gif">
     </div>
     <div class="grid-item slide">
      <img src="assets/img/slides/ben-sollee-slider.gif">
     </div>
-    <div class="grid-item text-slide">
-      Online learning with Treehouse
-      <img src="assets/img/treehouse-sm.gif">
-    </div>
     <div class="grid-item slide">
       <img src="assets/img/slides/DeathClass_slider.jpg">
     </div>
     <div class="grid-item text-slide">
       Meet LFPL's new director
+      <hr/>
     </div>
     <div class="grid-item slide">
       <img src="assets/img/slides/intl-month-slide.gif">
     </div>
+    <div class="grid-item search-slide">
+      Search the catalog
+    </div>
     <div class="grid-item slide">
       <img src="assets/img/slides/Share100Stories_slider.jpg">
+    </div>
+    <div class="grid-item text-slide">
+      Online learning with Treehouse
+      <hr/>
+      <img src="assets/img/treehouse-sm.gif">
     </div>
   </div>
 </div>
@@ -30,8 +37,8 @@
 $('.grid').masonry({
   // options
   itemSelector: '.grid-item',
-  columnWidth: 50,
-  gutter: 5
+  columnWidth: '.grid-sizer',
+  //gutter: '.gutter-sizer',
 });
 
 
