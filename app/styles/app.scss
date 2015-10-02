@@ -11,38 +11,51 @@
   border-color: silver;
   border-style: solid;
   box-shadow: 2px 2px 2px #bbb;
+  color: white;
+  font-size: 2.5rem;
 }
 
 .grid-sizer {
-  width: 33%;
+  width: 8.2%;
 }
 .gutter-sizer {
   width: 1%;
 }
 
 .slide {
-  width: 30%;
+  width: 31%;
 }
 
 .slide img {
   width: 100%;
 }
 
-.text-slide {
-  width: 22%;
-  color: white;
-  font-size: 3rem;
+.slide-caption {
   padding: 1.5%;
+}
+
+.text-slide {
+  width: 23%;
+  color: white;
+  padding: 1.5%;
+}
+
+.long-slide {
+  width: 47%;
+}
+
+.long-slide img {
+  float: left;
+  padding-right: 4.5%;
+  margin-right: 4.5%;
+  border-color: white;
+  border-style: solid;
+  border-right: 1px;
 }
 
 .text-slide img {
   width: 80%;
   margin-left: 10%;
-}
-
-.search-slide {
-  width: 200px;
-  height: 50px;
 }
 
 .grid-item:hover {
