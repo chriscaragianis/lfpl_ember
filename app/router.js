@@ -7,6 +7,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.resource('galleria', {path : '/'});
+  this.resource('results');
   this.resource('kids');
   this.resource('research', function() {
     this.resource('ill');

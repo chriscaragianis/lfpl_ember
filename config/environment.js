@@ -4,6 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     contentSecurityPolicy: {
       'default-src': "'none'",
+      'frame-src': "*",
       'script-src': "'self' 'unsafe-inline' *",
       'font-src': "'self' *",
       'connect-src': "'self' *",
