@@ -18,38 +18,40 @@ $('.loaded').load(function() {
   <div class="grid col-md-12">
     <div class="grid-sizer"></div>
     <div class="gutter-sizer"></div>
-    
+
     <div class="grid-item slide">
       <img src="assets/img/slides/1kbb4k-slide2.gif">
     </div>
-    
+
     <div class="grid-item slide">
      <img src="assets/img/slides/ben-sollee-slider.gif">
     </div>
-    
+
     <div class="grid-item slide">
       <img src="assets/img/slides/DeathClass_slider.jpg">
     </div>
-    
+
     <div class="grid-item long-slide">
       <img src="assets/img/slides/mayorbook.gif">
-      Mayor's Book Club Selection: <em>For the Benefit of Those Who See: 
+      <span class="slide-caption">
+        Mayor's Book Club Selection: <em>For the Benefit of Those Who See:
       Dispatches from the World of the Blind</em> by Rosemary Mahoney
+      </span>
     </div>
-    
+
     <div class="grid-item text-slide">
       Meet LFPL's new director
       <hr/>
     </div>
-    
-    <div class="grid-item text-slide">
+
+    <div class="grid-item text-slide" id="search-slide">
       Search the catalog
       <input type="text" id="query">
       {{#link-to 'results' (query-params resultsUrl=url)}}<button {{action 'setUrl'}}>
         Search
       </button>{{/link-to}}
     </div>
-    
+
     <div class="grid-item slide">
       <img src="assets/img/slides/southcentral.jpg">
       <hr/>
@@ -57,16 +59,15 @@ $('.loaded').load(function() {
         The South Central Regional Library Project
       </div>
     </div>
-    
-    
+
     <div class="grid-item slide">
       <img src="assets/img/slides/intl-month-slide.gif">
     </div>
-    
+
     <div class="grid-item slide">
       <img class="loaded" src="assets/img/slides/Share100Stories_slider.jpg">
     </div>
-    
+ 
     <div class="grid-item text-slide">
       Online learning with Treehouse
       <hr/>

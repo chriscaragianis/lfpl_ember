@@ -1,26 +1,16 @@
 <div class="locations jumbotron">
   <h1>Locations and hours</h1>
+  <br style="clear: left"/>
 </div>
 <div class="row">
-  <ul class="col-md-4 nav nav-pills nav-stacked">
-    <li>{{#link-to "#"}}i#{{/link-to}}</li>
-    <li>{{#link-to ""}}{{/link-to}}</li>
-    <li>{{#link-to ""}}{{/link-to}}</li>
-    <li>{{#link-to ""}}{{/link-to}}</li>
+  <ul class="col-md-3 nav nav-pills nav-stacked">
+    <li>placeholder</li>
+    <li>plceholder</li>
   </ul>
   <div class="col-md-8 info-display">
-    {{outlet}}
-  </div>
-</div>
-<h1><a name="top" id="top"></a>Branch Locations</h1>
-    <h2><a name="contact" id="contact"></a>Contact Us</h2>
-    <ul class="orangebullet">
-      <li>General Reference: <a href="../ask-lib.htm">Ask-a-Librarian</a> or (502) 574-1611 </li>
-      <li>Check Your Library Account and Renew Items: <a href="http://pac.lfpl.org/polaris/patronaccount">My Account</a> or (502) 574-1732</li>
-    </ul>
-    <p><a name="contactbranch" id="contactbranch"></a>Click on a branch name for phone numbers, directions, hours, branch history and more information.
-      &nbsp;(or see a <a href="map.htm">map of all library locations</a>) Please see our <a href="../library-closings.htm">Library Closings</a> page for information about holiday and other closings.</p>
-    <table width="75%" cellpadding="5" cellspacing="3" id="branch names">
+    <div class="wrapamap">
+      <div id="map">berger</div>
+  <table width="75%" cellpadding="5" cellspacing="3" id="branch names">
        <tr>
         <td height="59" valign="top" width="45%"><p> <a href="main.htm">Main Library</a> <br />
             301 York Street <br />
@@ -227,3 +217,142 @@
       </tr>
     </table>
 
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  var map;
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 38.215160, lng: -85.685417},
+      zoom: 11
+    });
+    var markers = [];
+
+    markers[0] = new google.maps.Marker({
+      position: {lat: 38.2448434, lng: -85.7577693},
+      map: map,
+      title: 'Main Library'
+    });
+
+    markers[1] = new google.maps.Marker({
+      position: {lat:38.2151821,lng:-85.6551983 },
+      map: map,
+      title: 'Bon Air'
+    });
+
+    markers[2] = new google.maps.Marker({
+      position: {lat:38.2544909,lng:-85.6911308},
+      map: map,
+      title: 'Crescent Hill'
+    });
+
+    markers[3] = new google.maps.Marker({
+      position: {lat:38.1062378,lng:-85.7605794},
+      map: map,
+      title: 'Fairdale'
+    });
+
+    markers[4] = new google.maps.Marker({
+      position: {lat:8.1480941,lng:-85.5885116},
+      map: map,
+      title: 'Fern Creek'
+    });
+
+    markers[5] = new google.maps.Marker({
+      position: {lat:38.2358299,lng:-85.7170353},
+      map: map,
+      title: 'Highlands-Shelby Park'
+    });
+
+    markers[6] = new google.maps.Marker({
+      position: {lat:38.1826431,lng:-85.7715542},
+      map: map,
+      title: 'Iroquois'
+    });
+
+    markers[7] = new google.maps.Marker({
+      position: {lat:38.1978075,lng:-85.5610059},
+      map: map,
+      title: 'Jeffersontown'
+    });
+
+    markers[8] = new google.maps.Marker({
+      position: {lat:38.2478095,lng:-85.5264033},
+      map: map,
+      title: 'Middletown'
+    });
+
+    markers[9] = new google.maps.Marker({
+      position: {lat:38.1817652,lng:-85.6704767},
+      map: map,
+      title: 'Newburg'
+    });
+
+    markers[10] = new google.maps.Marker({
+      position: {lat:38.1397773,lng:-85.6867983},
+      map: map,
+      title: 'Okolona'
+    });
+
+    markers[11] = new google.maps.Marker({
+      position: {lat:38.2752441,lng:-85.8013323},
+      map: map,
+      title: 'Portland'
+    });
+
+    markers[12] = new google.maps.Marker({
+      position: {lat:38.249317,lng:-85.6495522},
+      map: map,
+      title: 'St. Matthews'
+    });
+
+    markers[13] = new google.maps.Marker({
+      position: {lat:38.2498543,lng:-85.8168468},
+      map: map,
+      title: 'Shawnee'
+    });
+
+    markers[14] = new google.maps.Marker({
+      position: {lat:38.195153,lng:-85.8068566},
+      map: map,
+      title: 'Shively'
+    });
+
+    markers[15] = new google.maps.Marker({
+      position: {lat:38.114239,lng:-85.8591575},
+      map: map,
+      title: 'Southwest'
+    });
+
+    markers[16] = new google.maps.Marker({
+      position: {lat:38.2497933,lng:-85.7681241},
+      map: map,
+      title: 'Western'
+    });
+
+    markers[17] = new google.maps.Marker({
+      position: {lat:38.2757018,lng:-85.6003938},
+      map: map,
+      title: 'Westport'
+    });
+
+    markers[13] = new google.maps.Marker({
+      position: {lat:38.2498543,lng:-85.8168468},
+      map: map,
+      title: 'Shawnee'
+    });
+  }
+</script>
+
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASIdxXeYZxbnx6T_obT82p-dgYq3y_7sk&callback=initMap">
+</script>
