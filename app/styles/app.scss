@@ -1,3 +1,10 @@
+@media screen and (max-device-width: 900px) {
+  .grid-item {
+    display: none;
+  }
+}
+  
+
 * {
   border-radius: 0 ! important;
   font-family: 'Roboto', sans-serif;
@@ -79,6 +86,8 @@ footer {
 .long-slide img {
   float: left;
   padding-right: 4.5%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
   margin-right: 4.5%;
   border-color: white;
   border-style: solid;
